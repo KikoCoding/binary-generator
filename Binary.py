@@ -1,10 +1,10 @@
 from random import randint
 
-x = eval(input('How many columns?\n->'))
-y = eval(input('How many lines?\n->'))
+input_x = eval(input('How many columns?\n->'))
+input_y = eval(input('How many lines?\n->'))
 
 
-def binarygen():
+def binarygen(x, y):
 
     for i in range(y):
 
@@ -14,4 +14,4 @@ def binarygen():
             print(val, end=' ', flush=True)
 
 
-binarygen()
+binarygen(input_x, input_y)
